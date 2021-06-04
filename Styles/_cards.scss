@@ -1,0 +1,21 @@
+.ad-message {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #002979;
+    font-size: 28px;
+    padding: 15px 10px;
+    a {
+        color: white;
+    }
+    span {
+        color: white;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .message-mini {
+        font-size: 10px;
+    }
+}
+

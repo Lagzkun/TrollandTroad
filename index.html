@@ -5,54 +5,554 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troll and Toad</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-top">
-            <div class="logo"></div>
-            <div class="searcher"></div>
-            <div class="action">
-                <a href="#"></a>
-                <a href="#"></a>
+            <div class="container header-top__content">
+                <div class="logo"><img src="img/TNTLogoNoHex.png" alt=""></div>
+                <div class="searcher">
+                    <input placeholder="Search..." type="text">
+                    <button class="search-button">
+                        <svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><circle cx="21" cy="20" fill="none" r="16" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="32.229" x2="45.5" y1="32.229" y2="45.5"/></svg>
+                    </button>
+                </div>
+                <div class="header-icon-top">
+                    <a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450.391 450.391" style="enable-background:new 0 0 450.391 450.391;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M143.673,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122C169.796,411.77,158.1,423.465,143.673,423.465z"/>
+                                    <path d="M342.204,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02s47.02-21.052,47.02-47.02C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z"/>
+                                    <path d="M448.261,76.037c-2.176-2.377-5.153-3.865-8.359-4.18L99.788,67.155L90.384,38.42C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></a>
+                    <a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M240,0C107.664,0,0,107.664,0,240c0,57.96,20.656,111.184,54.992,152.704c0.088,0.12,0.096,0.272,0.192,0.384c24.792,29.896,55.928,52.816,90.624,67.624c0.4,0.168,0.792,0.352,1.192,0.52c2.808,1.184,5.648,2.28,8.496,3.352c1.12,0.424,2.24,0.856,3.376,1.264c2.456,0.88,4.928,1.712,7.416,2.512c1.592,0.512,3.184,1.016,4.792,1.496c2.2,0.656,4.408,1.288,6.632,1.888c1.952,0.528,3.92,1.016,5.888,1.488c1.992,0.48,3.992,0.96,6,1.384c2.24,0.48,4.504,0.904,6.776,1.32c1.824,0.336,3.64,0.688,5.48,0.984c2.52,0.408,5.056,0.728,7.6,1.056c1.64,0.208,3.272,0.448,4.92,0.624c2.88,0.304,5.784,0.52,8.696,0.72c1.352,0.096,2.696,0.24,4.056,0.312c4.248,0.24,8.544,0.368,12.872,0.368s8.624-0.128,12.888-0.352c1.36-0.072,2.704-0.216,4.056-0.312c2.912-0.208,5.816-0.416,8.696-0.72c1.648-0.176,3.28-0.416,4.92-0.624c2.544-0.328,5.08-0.648,7.6-1.056c1.832-0.296,3.656-0.648,5.48-0.984c2.264-0.416,4.528-0.84,6.776-1.32c2.008-0.432,4-0.904,6-1.384c1.968-0.48,3.936-0.968,5.888-1.488c2.224-0.592,4.432-1.232,6.632-1.888c1.608-0.48,3.2-0.984,4.792-1.496c2.488-0.8,4.96-1.632,7.416-2.512c1.128-0.408,2.248-0.84,3.376-1.264c2.856-1.072,5.688-2.176,8.496-3.352c0.4-0.168,0.792-0.352,1.192-0.52c34.688-14.808,65.832-37.728,90.624-67.624c0.096-0.112,0.104-0.272,0.192-0.384C459.344,351.184,480,297.96,480,240C480,107.664,372.336,0,240,0z M337.256,441.76c-0.12,0.056-0.232,0.12-0.352,0.176c-2.856,1.376-5.76,2.672-8.688,3.936c-0.664,0.28-1.32,0.568-1.984,0.848c-2.56,1.072-5.152,2.088-7.76,3.064c-1.088,0.408-2.176,0.808-3.272,1.192c-2.312,0.824-4.632,1.616-6.976,2.368c-1.456,0.464-2.92,0.904-4.384,1.336c-2.08,0.624-4.168,1.224-6.28,1.784c-1.776,0.472-3.568,0.904-5.36,1.328c-1.88,0.448-3.752,0.904-5.648,1.304c-2.072,0.44-4.16,0.816-6.24,1.192c-1.688,0.312-3.368,0.64-5.072,0.912c-2.344,0.368-4.712,0.664-7.072,0.96c-1.496,0.192-2.984,0.416-4.496,0.576c-2.696,0.288-5.416,0.472-8.128,0.664c-1.208,0.08-2.408,0.216-3.632,0.28c-3.96,0.208-7.928,0.32-11.912,0.32s-7.952-0.112-11.904-0.32c-1.216-0.064-2.416-0.192-3.632-0.28c-2.72-0.184-5.432-0.376-8.128-0.664c-1.512-0.16-3-0.384-4.496-0.576c-2.36-0.296-4.728-0.592-7.072-0.96c-1.704-0.272-3.384-0.6-5.072-0.912c-2.088-0.376-4.176-0.76-6.24-1.192c-1.896-0.4-3.776-0.856-5.648-1.304c-1.792-0.432-3.584-0.856-5.36-1.328c-2.104-0.56-4.2-1.168-6.28-1.784c-1.464-0.432-2.928-0.872-4.384-1.336c-2.344-0.752-4.672-1.544-6.976-2.368c-1.096-0.392-2.184-0.792-3.272-1.192c-2.608-0.976-5.2-1.992-7.76-3.064c-0.664-0.272-1.312-0.56-1.976-0.84c-2.928-1.256-5.832-2.56-8.696-3.936c-0.12-0.056-0.232-0.112-0.352-0.176c-27.912-13.504-52.568-32.672-72.576-55.952c15.464-56.944,59.24-102.848,115.56-121.112c1.112,0.68,2.272,1.288,3.416,1.928c0.672,0.376,1.336,0.776,2.016,1.136c2.384,1.264,4.8,2.448,7.272,3.512c1.896,0.832,3.856,1.536,5.808,2.256c0.384,0.136,0.768,0.288,1.152,0.424c10.848,3.84,22.456,6.04,34.6,6.04s23.752-2.2,34.592-6.04c0.384-0.136,0.768-0.288,1.152-0.424c1.952-0.72,3.912-1.424,5.808-2.256c2.472-1.064,4.888-2.248,7.272-3.512c0.68-0.368,1.344-0.76,2.016-1.136c1.144-0.64,2.312-1.248,3.432-1.936c56.32,18.272,100.088,64.176,115.56,121.112C389.824,409.08,365.168,428.248,337.256,441.76z M152,176c0-48.52,39.48-88,88-88s88,39.48,88,88c0,30.864-16.008,58.024-40.128,73.736c-3.152,2.048-6.432,3.88-9.8,5.48c-0.4,0.192-0.792,0.392-1.192,0.576c-23.168,10.536-50.592,10.536-73.76,0c-0.4-0.184-0.8-0.384-1.192-0.576c-3.376-1.6-6.648-3.432-9.8-5.48C168.008,234.024,152,206.864,152,176z M421.832,370.584c-18.136-53.552-59.512-96.832-112.376-117.392C330.6,234.144,344,206.64,344,176c0-57.344-46.656-104-104-104s-104,46.656-104,104c0,30.64,13.4,58.144,34.552,77.192c-52.864,20.568-94.24,63.84-112.376,117.392C31.672,333.792,16,288.704,16,240C16,116.488,116.488,16,240,16s224,100.488,224,224C464,288.704,448.328,333.792,421.832,370.584z"/>
+                            </g>
+                        </g>
+                    </svg>
+                    </a>
+                </div>
             </div>
         </div>
         <nav class="navbar">
-            <div class="menu">
-                <ul>
-                    <li>All categories</li>
-                    <li>Magic: The Gathering</li>
-                    <li>YuGiOh</li>
-                    <li>Pokemon</li>
-                    <li>HeroClix</li>
-                    <li>Sports Cards</li>
-                </ul>
-            </div>
-            <div class="links">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="container nav-content">
+                <div class="principal-menu">
+                    <ul class="principal-menu__list">
+                        <li>All categories
+                            <span class="submenu-content">
+                                <ul class="submenu-content__list">
+                                    <li>Magic: The Gathering</li>
+                                    <li>YuGiOh</li>
+                                    <li>Pokemon</li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>Magic: The Gathering
+                            <span class="submenu-content">
+                                <ul class="submenu-content__list">
+                                    <li>Strixhaven: School of Mages</li>
+                                    <li>Time Spiral Remastered</li>
+                                    <li>Challenger Decks 2021</li>
+                                </ul>
+                            </span-->
+                        </li>
+                        <li>YuGiOh
+                            <span class="submenu-content">
+                                <ul class="submenu-content__list">
+                                    <li>Ancient Guardians</li>
+                                    <li>Ghosts From the Past</li>
+                                    <li>Structure Deck: Freezing Chains</li>
+                                </ul>
+                            </span-->
+                        </li>
+                        <li>Pokemon
+                            <span class="submenu-content">
+                                <ul class="submenu-content__list">
+                                    <li>Battle Styles</li>
+                                    <li>Shining Fates</li>
+                                    <li>Alakazam V Box</li>
+                                </ul>
+                            </span-->
+                        </li>
+                        <li>HeroClix
+                            <span class="submenu-content">
+                                <ul class="submenu-content__list">
+                                    <li>Marvel HeroClix</li>
+                                    <li>DC HeroClix</li>
+                                    <li>All HeroClix Singles</li>
+                                </ul>
+                            </span-->
+                        </li>
+                        <li>Sports Cards
+                            <span class="submenu-content">
+                                <a class="btn btn-primary">View All</a>
+                                <a class="btn btn-secundary">View Best Seller</a>
+                            </span-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="secondary-menu">
+                        <a href="" class="menu-links"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 339.004 339.004" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
+                            <path xmlns="http://www.w3.org/2000/svg" d="M262.122,232.344c0.197-26.82-10.405-48.031-31.552-63.01c-16.333-11.533-36.154-17.549-55.325-23.33  c-39.936-12.107-51.521-18.484-51.521-37.582c0-21.273,27.646-28.842,51.313-28.842c17.236,0,37.066,5.359,49.381,13.301  l24.415-37.812c-16.095-10.434-38.123-17.551-59.875-19.76V0H143.92v37.785c-40.035,8.807-65.255,34.973-65.255,70.637  c0,24.977,10.379,44.785,30.79,58.756c15.524,10.666,34.457,16.393,52.746,21.938c39.172,11.84,55.079,19.055,54.898,42.949  l-0.001,0.176c0,20.055-26.577,27.184-49.346,27.184c-21.508,0-44.897-9.426-58.155-23.441l-32.719,30.949  c16.79,17.758,41.184,30.313,67.041,35.234v36.838h45.039v-36.045C233.445,296.592,262.078,269.809,262.122,232.344z" fill="#ffffff" data-original="#000000" style="" class=""/></g>
+                        </svg>Buylist</a>
+                        <a href="" class="menu-links">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g transform="matrix(1,0,0,1,0,0)">
+                                    <g xmlns="http://www.w3.org/2000/svg">		
+                                        <g>
+                                            <path d="M467,80.609H45c-24.813,0-45,20.187-45,45v260.782c0,24.813,20.187,45,45,45h422c24.813,0,45-20.187,45-45V125.609    C512,100.796,491.813,80.609,467,80.609z M461.127,110.609l-6.006,5.001L273.854,266.551c-10.346,8.614-25.364,8.614-35.708,0    L56.879,115.61l-6.006-5.001H461.127z M30,132.267L177.692,255.25L30,353.543V132.267z M467,401.391H45    c-7.248,0-13.31-5.168-14.699-12.011l171.445-114.101l17.204,14.326c10.734,8.938,23.893,13.407,37.051,13.407    c13.158,0,26.316-4.469,37.051-13.407l17.204-14.326l171.444,114.1C480.31,396.224,474.248,401.391,467,401.391z M482,353.543    l-147.692-98.292L482,132.267V353.543z" fill="#ffffff" data-original="#000000" style="" class=""/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>                            
+                            Contac Us
+                        </a>
+                        <a href="" class="menu-links covid-color"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 286.054 286.054" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <path style="" d="M143.027,0C64.04,0,0,64.04,0,143.027c0,78.996,64.04,143.027,143.027,143.027   c78.996,0,143.027-64.022,143.027-143.027C286.054,64.04,222.022,0,143.027,0z M143.027,259.236   c-64.183,0-116.209-52.026-116.209-116.209S78.844,26.818,143.027,26.818s116.209,52.026,116.209,116.209   S207.21,259.236,143.027,259.236z M143.036,62.726c-10.244,0-17.995,5.346-17.995,13.981v79.201c0,8.644,7.75,13.972,17.995,13.972   c9.994,0,17.995-5.551,17.995-13.972V76.707C161.03,68.277,153.03,62.726,143.036,62.726z M143.036,187.723   c-9.842,0-17.852,8.01-17.852,17.86c0,9.833,8.01,17.843,17.852,17.843s17.843-8.01,17.843-17.843   C160.878,195.732,152.878,187.723,143.036,187.723z" fill="#d08008" data-original="#e2574c" class=""/>
+                                </g>
+                            </g>
+                        </svg>Covid 19</a>
+                </div>
             </div>
         </nav>
     </header>
     <div class="container">
-        <div class="slider"></div>
+        <div class="slider-box">
+            <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0">
+                <a type="button" data-controls="prev" tabindex="-1" aria-controls="base" class="btn-arrow left-btn" ><img src="img/left-arrow.png" alt="">
+                </a>
+                <a type="button" data-controls="next" tabindex="-1" aria-controls="base" class="btn-arrow right-btn"><img src="img/right-arrow.png" alt="">
+            </a>
+            </div>
+            <div class="my-slider">
+                <div><img src="img/LeonhartBox5282021.jpg" alt=""></div>
+                <div><img src="img/PokeBatStyNA.jpg" alt=""></div>
+                <div><img src="img/PokeSale5272021.jpg" alt=""></div>
+                <div><img src="img/BuylistBonus35.jpg" alt=""></div>
+            </div>
+        </div>
+          <!-- or ul.my-slider > li -->
         <div class="ad-message">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <div class="message-page"> 
+               <a href="#">SIGN UP FOR</a>
+               <span>WEEKLY SPECIAL OFFER</span>
+               <span>& EXCLUSIVE PRODUCTS</span>
+            </div>
+            <div class="message-page">
+                <a href="#">FREE SHIPPING</a>
+                <span>ON CARD SINGLES</span>
+                <span class="message-mini">*Continental US Only</span>      
+            </div> 
+            <div class="message-page">
+                <a href="#">SELL TO US</a>
+                <span>35% BONUS</span>
+                <span class="message-mini">Web Credit Only</span>
+            </div> 
+            <div class="message-page">
+                <a href="#">TROLLANDTOAD</a>
+                <span>EVO PLATFORM</span>
+                <span class="message-mini">Sell On TrollAndToad.Com</span>
+            </div> 
         </div>
-        <div></div>
-        <div class="slider-product"></div>
+        <div class="catalog">
+            <div class="card">
+                <div>
+                   <a href="">
+                       <img src="img/MTGStrixFP.jpg" alt="">
+                    </a> 
+                </div>
+                <div class="card-p">
+                    <a href="#">MTG Strixhaven: School of Mages</a>
+                </div>
+                <div >
+                    <span>Magic goes off to college at Strixhaven: School of Mages. Join one of Strixhavens five colleges and get in where you fit in among the brightest young spell casters around.</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/YGOAncGuardFP.jpg" alt="">
+                    </a> 
+                </div>
+                <div class="card-p">
+                    <a href="#">Yugioh Ancient Guardians</a>
+                </div>
+                <div>
+                    <span>Ancient Guardians unearths powerful new monsters! This 60-card booster set introduces 3 brand-new strategies along with older cards that enhance them.</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/PokeBatStyFP.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Pokemon Battle Styles</a>
+                </div>
+                <div>
+                    <span>No matter how you battle with the upcoming Pokemon Trading Card Game expansion, you'll be battling in style. Battle Styles features over 160 cards, and it introduces new Single Strike and Rapid Strike style cards.</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/WW80FPButton.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">DC HeroClix: Wonder Woman 80th Anniversary</a>
+                </div>
+                <div>
+                    <span>Wonder Woman has changed comics over the past 80 years and now she is here to change HeroClix! Wonder Woman 80th Anniversary has something for everyone!</span>
+                </div>
+            </div>
+            <!--2da columna-->
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/sportscardsFP.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Sports Cards</a>
+                </div>
+                <div >
+                    <span>Find Baseball, Basketball, and Football trading cards!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/BoardGameFpButton5212021.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Board Games</a>
+                </div>
+                <div>
+                    <span>Browse thousands of Board Games today!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/rpg.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">RPGs</a>
+                </div>
+                <div>
+                    <span>Dust off your tabletop and browse our huge selection of RPGs! Get Dungeons and Dragons, Pathfinder, and more RPGs today!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/JigsawPuzzlesFPButton.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Jigsaw Puzzles</a>
+                </div>
+                <div>
+                    <span>Jigsaw Puzzles are now available! Browse our huge line of puzzles today!</span>
+                </div>
+            </div>
+            <!--3ra columna-->
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/suppliesFPButton.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Supplies</a>
+                </div>
+                <div >
+                    <span>Protect your cards and minis with our huge selection of gaming supplies!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/DigimonFP.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Digimon</a>
+                </div>
+                <div>
+                    <span>Get Digimon card singles, booster boxes, and more!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/DBSFP.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Dragon Ball Super TCG</a>
+                </div>
+                <div>
+                    <span>Dragon Ball Super Card Game is a card game with characters from not just Dragon Ball Super, but countless other Dragon Ball series! Get card singles and more today!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <a href="">
+                        <img src="img/toysFP.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-p">
+                    <a href="#">Toys</a>
+                </div>
+                <div>
+                    <span>Find hundreds of toys from Pokemon, Marvel, DC, and more!</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-product">
+            <div class="name-slider"> 
+                <a href="#">Best Sellers</a> 
+            </div>
+            <div class="p-slider">
+                <div class="product-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <a type="button" data-controls="prev" tabindex="-1" aria-controls="base" class="btn-arrow left-btn" ><img src="img/left-arrow.png" alt="">
+                    </a>
+                    <a type="button" data-controls="next" tabindex="-1" aria-controls="base" class="btn-arrow right-btn"><img src="img/right-arrow.png" alt="">
+                </a>
+                </div>
+                <div class="slider-bot">
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1485376.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Sun & Moon Unified Minds Booster Pack (Pokemon)</span>
+                            </div> 
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Sealed Product</span>
+                            </div>  
+                        </a>
+                        <span class="price-item">$9.45</span>
+                        <button class="button-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1645158.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Zacian V - 138/202 - Ultra Rare</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Sword & Shield (Base Set) Singles</span>
+                            </div>    
+                        </a>
+                        <span class="price-item">$8.00</span>
+                        <button class="button-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>    
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1668004.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Dedenne GX - 195a/214 - Alternate Art Promo</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Alternate Holo and Alternate Art Promos</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$5.39</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1687401.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Sword & Shield Battle Styles Booster Box (Pokemon)</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Sealed Product</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$109.95</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1179588.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Sun & Moon Celestial Storm Booster Pack (Pokemon)</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Sealed Product</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$13.99</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1149693.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Herald of Orange Light - SR05-EN019 - Common 1st Edition</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Wave of Light Singles</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$3.49</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <!--2da tanda-->
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1681084.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Tri-Brigade Fraktall - PHRA-EN008 - Ultra Rare 1st Edition</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Phantom Rage 1st Edition Singles [PHRA]</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$29.99</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1194068.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Sun & Moon Lost Thunder Booster Pack (Pokemon)</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Sealed Product</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$9.98</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1676361.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Alcremie VMAX - 023/073 - Ultra Rare</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Champion's Path Singles</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$6.97</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1132435.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Sun & Moon Crimson Invasion Booster Pack (Pokemon)</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Pokemon Sealed Product</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$4.04</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1556805.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Monster Reborn - TN19-EN011 - Prismatic Secret Rare Limited Edition</span>
+                            </div>
+                            <div class="text-product">
+                                <span class="description-item">Yu-Gi-Oh! Promo Cards</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$2.45</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button> 
+                    </div>
+                    <div class="product-bot">
+                        <a href="#">
+                            <img src="img/1681747.jpg" alt="">
+                            <div class="text-product">
+                                <span class="name-item">Borrelsword Dragon (Alternate Art) - MAGO-EN039 - Premium Gold Rare 1st Edition</span>
+                            </div>
+                            <div class="text-product">
+
+                                <span class="description-item">Maximum Gold 1st Edition Singles</span>
+                            </div>
+                        </a>
+                        <span class="price-item">$4.17</span>
+                        <button class="button-item"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="18" height="18" x="0" y="0" viewBox="0 0 511.346 511.346" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="m490.336 128.003h-85.674c.158-71.284-57.868-127.997-127.662-127.997-69.893 0-127.82 56.812-127.662 127.997h-58.812l-5.943-66.208c-.972-10.826-10.045-19.122-20.916-19.122h-42.667c-11.598 0-21 9.402-21 21s9.402 21 21 21h23.467c1.367 15.228 24.148 269.089 24.208 269.618 2.551 22.11 13.851 41.267 30.19 54.21-32.546 41.563-2.811 102.839 50.135 102.839 43.966 0 74.925-43.853 59.865-85.334h114.936c-15.05 41.455 15.876 85.334 59.866 85.334 35.106 0 63.667-28.561 63.667-63.667s-28.561-63.667-63.667-63.667h-234.525c-15.952 0-29.853-9.624-35.854-23.646l335.611-19.724c9.163-.538 16.914-6.966 19.141-15.87l42.67-170.67c3.315-13.261-6.737-26.093-20.374-26.093zm-213.336-85.997c47.237 0 85.667 38.43 85.667 85.667s-38.43 85.667-85.667 85.667-85.667-38.43-85.667-85.667 38.43-85.667 85.667-85.667zm-128 427.334c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm234.667 0c-11.947 0-21.667-9.72-21.667-21.667s9.72-21.667 21.667-21.667 21.667 9.72 21.667 21.667-9.72 21.667-21.667 21.667zm47.368-169.725-323.399 19.005-13.34-148.617h62.26c17.502 49.652 64.88 85.337 120.444 85.337s102.943-35.685 120.444-85.337h65.996z" fill="#ffffff" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m245 148.673h11v11c0 11.598 9.402 21 21 21s21-9.402 21-21v-11h11c11.598 0 21-9.402 21-21s-9.402-21-21-21h-11v-11c0-11.598-9.402-21-21-21s-21 9.402-21 21v11h-11c-11.598 0-21 9.402-21 21s9.402 21 21 21z" fill="#ffffff" data-original="#000000" style="" class=""/></g></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <Footer>
-        <div></div>
-        <div>
+    <footer class="footer">
+        <div class="Up-Boton"><button>Back to top</button></div>
+        <div class="footend">
             <div></div>
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </Footer>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+        var slider = tns({
+          container: '.my-slider',
+          items: 1,
+          slideBy: 'page',
+          autoplay: false,
+          //controls: false, 
+          controlsContainer: '.tns-controls'
+        });
+        var sliderBot = tns({
+          container: '.slider-bot',
+          items: 6,
+          slideBy: 'page',
+          autoplay: false,
+          //controls: false, 
+          controlsContainer: '.product-controls'
+        });
+    </script>
 </body>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->  
 </html>
