@@ -130,13 +130,13 @@
     </header>
     <div class="container">
         <div class="slider-box">
-            <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0">
+            <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" data-principal-slider-controls>
                 <a type="button" data-controls="prev" tabindex="-1" aria-controls="base" class="btn-arrow left-btn" ><img src="img/left-arrow.png" alt="">
                 </a>
                 <a type="button" data-controls="next" tabindex="-1" aria-controls="base" class="btn-arrow right-btn"><img src="img/right-arrow.png" alt="">
             </a>
             </div>
-            <div class="my-slider">
+            <div class="my-slider" data-principal-slider>
                 <div><img src="img/LeonhartBox5282021.jpg" alt=""></div>
                 <div><img src="img/PokeBatStyNA.jpg" alt=""></div>
                 <div><img src="img/PokeSale5272021.jpg" alt=""></div>
@@ -331,13 +331,13 @@
                 <a href="#">Best Sellers</a> 
             </div>
             <div class="p-slider">
-                <div class="product-controls" aria-label="Carousel Navigation" tabindex="0">
+                <div class="product-controls" aria-label="Carousel Navigation" tabindex="0" data-secundary-slider-controls>
                     <a type="button" data-controls="prev" tabindex="-1" aria-controls="base" class="btn-arrow left-btn" ><img src="img/left-arrow.png" alt="">
                     </a>
                     <a type="button" data-controls="next" tabindex="-1" aria-controls="base" class="btn-arrow right-btn"><img src="img/right-arrow.png" alt="">
                 </a>
                 </div>
-                <div class="slider-bot">
+                <div class="slider-bot" data-secundary-slider>
                     <div class="product-bot">
                         <a href="#">
                             <img src="img/1485376.jpg" alt="">
@@ -533,26 +533,7 @@
             <div></div>
         </div>
     </footer>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script type="module">
-        var slider = tns({
-          container: '.my-slider',
-          items: 1,
-          slideBy: 'page',
-          autoplay: false,
-          //controls: false, 
-          controlsContainer: '.tns-controls'
-        });
-        var sliderBot = tns({
-          container: '.slider-bot',
-          items: 6,
-          slideBy: 'page',
-          autoplay: false,
-          //controls: false, 
-          controlsContainer: '.product-controls'
-        });
-    </script>
+    <script src="dist/index.js"></script>
 </body>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->  
 </html>
