@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Open Sans,calibri light,calibri,sans-serif;
+    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+    background-color: #eee;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 1400px) {
+        max-width: 1300px;
+    }
+}
+
+a {
+    text-decoration: none;
+}

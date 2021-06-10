@@ -1,0 +1,28 @@
+{
+  "name": "TrollAndToad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lagzkun/Landing-test-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lagzkun/Landing-test-/issues"
+  },
+  "homepage": "https://github.com/Lagzkun/Landing-test-#readme",
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.19",
+    "postcss": "^8.3.0",
+    "webpack-cli": "^4.7.0"
+  }
+}

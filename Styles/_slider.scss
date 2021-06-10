@@ -1,0 +1,119 @@
+.slider-box {
+    position: relative;
+    img {
+        width: 101%;
+    }
+    &:hover {
+        .tns-nav, .tns-controls {
+            display: flex;
+        }
+    }
+}
+.slider-product {
+    position: relative;
+    .product-controls {
+        display: block;
+    }
+    .tns-item{
+        text-align: center;
+    }
+}
+.btn-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    transition: opacity .15s ease;
+}
+.tns-nav {
+    display: none;
+    width: 100%;
+    background: #0000008c;
+    padding: 10px;
+    position: absolute;
+    bottom: 4px;
+    z-index: 15;
+    justify-content: center;
+    button {
+        width: 10px !important;
+        height: 16px !important;
+        border-radius: 50px;
+        margin: 0 10px;
+        &.tns-nav-active {
+            background-color: #d08008;
+        }
+    }
+}
+.tns-controls, .product-controls {
+    display: none;
+    a {
+        height: 100px;
+        width: 40px;
+        margin: auto 0;
+    }
+    .right-btn {
+       right: 14px; 
+    }
+    .left-btn {
+        left: 14px;
+    }    
+}
+.slider-product {
+    margin-top: 24px;
+}
+.name-slider {
+    background-color: #F7F7F7;
+    padding: 12px 20px;
+    border: 1px solid #dee2e6;
+    border-top-left-radius: .25rem;
+    border-top-left-radius: .25rem;
+    a {
+        color: #333333;
+        font-weight: bold;
+    }
+}
+.p-slider {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.product-bot {
+    padding: 0 15px;
+    span.name-item, span.price-item {
+        color: #333333;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    span.description-item{
+        color: #333333;
+        font-size: 14px;
+    }
+    span.price-item{
+        padding-right: 30px;
+    }
+    .button-item {
+        border-radius: .25rem;
+        background-color: #336600;
+        width: 40%;
+        height: auto;
+        cursor: pointer;
+    }
+}
+.text-product{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
