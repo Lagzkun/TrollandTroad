@@ -1,4 +1,14 @@
-footer.footer{    
+.footer{    
         background-color: #002979;
         margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        .Up-Boton {
+                padding: 16px;
+                button {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                }
+        }
 }

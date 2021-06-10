@@ -3922,12 +3922,14 @@ var selectors = {
   principalSlider: '[data-principal-slider]',
   principalControls: '[data-principal-slider-controls]',
   secundarySlider: '[data-secundary-slider]',
-  secundaryControls: '[data-secundary-slider-controls]'
+  secundaryControls: '[data-secundary-slider-controls]',
+  myButtonUp: '[data-my-button-up]'
 };
 var principalSlider = document.querySelector(selectors.principalSlider);
 var principalControl = document.querySelector(selectors.principalControls);
 var secundarySlider = document.querySelector(selectors.secundarySlider);
 var secundaryControls = document.querySelector(selectors.secundaryControls);
+var myButtonUp = document.querySelector(selectors.myButtonUp);
 var slider = (0,tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns)({
   container: principalSlider,
   items: 1,
@@ -3943,6 +3945,17 @@ var sliderBot = (0,tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__.tns)
   autoplay: false,
   //controls: false, 
   controlsContainer: secundaryControls
+});
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+
+  document.documentElement.scrollTop = 0;
+}
+
+myButtonUp.addEventListener('click', function () {
+  topFunction();
+  console.log("gg");
 });
 console.log("uwu");
 })();
