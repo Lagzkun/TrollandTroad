@@ -30,11 +30,18 @@ var slider = tns({
 
 var sliderBot = tns({
     container: secundarySlider,
-    items: 6,
     slideBy: 'page',
     autoplay: false,
     //controls: false, 
-    controlsContainer: secundaryControls
+    controlsContainer: secundaryControls,
+    responsive: {
+        280: {
+            items: 2
+          },
+          900: {
+            items: 6
+          }
+    }
 });
 
 function topFunction() {
@@ -46,14 +53,14 @@ myButtonUp.addEventListener('click', function() {
 console.log("gg")
 });
 
-async function fetchData() {
+async function fetchData() { //la palabra async se utiliza para llamar una funcion de forma asincrona y esta se utiliza para funciones de API.
     
-    const response = await fetch('http://localhost:3000/cards/');
+    const response = await fetch('http://localhost:3000/cards/'); // la palabra await se utiliza para permitir un tiempo de respuesta de la API.
     const data = await response.json();
-    console.log(data);
+    console.log(data);//data es la respuesta del API. 
     
-    var tarjetaDom = "";
-    data.forEach(jsonInteration => {
+    var tarjetaDom = ""; //se crea una variable vacia la cual va almacenar el contenido renderizado desde la API, esto es debido a que estamos itereando los resultados del API y se muestren en secuencia
+    data.forEach(jsonInteration => { // forEach itera el contenido del API(data) en la variable JsonInteration
         tarjetaDom += `
             <div class="card">
                 <div>
@@ -68,9 +75,9 @@ async function fetchData() {
                     <span>${jsonInteration.contenido}</span>
                 </div>
             </div>
-        `;
+        `;// El += tiene el objetivo de tomar una variable y sumarla a ella misma por cada vez que se itere dentro de un ciclo, asi sea forEach
+        // en este caso estamos creando todas las tarjetas una por una asignandole los valores que los traemos de la solicitud API. 
+        console.log(tarjetaDom);
     });
-    cardsCatalog.innerHTML = tarjetaDom;
-    console.log(tarjetaDom)
-}     
-console.log(cardsCatalog);
+    cardsCatalog.innerHTML = tarjetaDom;//aca se inserta dentro de cardscatalog todos los elementos "card" que juntamos dentro de la variable tarjeta DOM
+}

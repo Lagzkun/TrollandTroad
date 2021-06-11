@@ -16,11 +16,13 @@ body {
 }
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (min-width: 1400px) {
+    @include respond-to(desktop) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    @include respond-to(wide) {
         max-width: 1300px;
     }
 }

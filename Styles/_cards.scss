@@ -17,5 +17,17 @@
     .message-mini {
         font-size: 10px;
     }
+    @include less-than(desktop) {
+        flex-wrap: wrap;
+        font-size: 20px;
+        span {
+            font-size: 7px;
+        }
+        .message-page {
+            &:nth-last-child(1) {
+                display: none;
+            }
+        }
+    }
 }
 

@@ -4774,11 +4774,18 @@ var slider = (0,tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_1__.tns)({
 });
 var sliderBot = (0,tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_1__.tns)({
   container: secundarySlider,
-  items: 6,
   slideBy: 'page',
   autoplay: false,
   //controls: false, 
-  controlsContainer: secundaryControls
+  controlsContainer: secundaryControls,
+  responsive: {
+    280: {
+      items: 2
+    },
+    900: {
+      items: 6
+    }
+  }
 });
 
 function topFunction() {
@@ -4813,15 +4820,20 @@ function _fetchData() {
 
           case 5:
             data = _context.sent;
-            console.log(data);
-            tarjetaDom = "";
-            data.forEach(function (jsonInteration) {
-              tarjetaDom += "\n            <div class=\"card\">\n                <div>\n                    <a href=\"\">\n                        <img src=\"".concat(jsonInteration.imagen, "\" alt=\"\">\n                    </a> \n                </div>\n                <div class=\"card-p\">\n                    <a href=\"#\">").concat(jsonInteration.titulo, "</a>\n                </div>\n                <div>\n                    <span>").concat(jsonInteration.contenido, "</span>\n                </div>\n            </div>\n        ");
-            });
-            cardsCatalog.innerHTML = tarjetaDom;
-            console.log(tarjetaDom);
+            console.log(data); //data es la respuesta del API. 
 
-          case 11:
+            tarjetaDom = ""; //se crea una variable vacia la cual va almacenar el contenido renderizado desde la API, esto es debido a que estamos itereando los resultados del API y se muestren en secuencia
+
+            data.forEach(function (jsonInteration) {
+              // forEach itera el contenido del API(data) en la variable JsonInteration
+              tarjetaDom += "\n            <div class=\"card\">\n                <div>\n                    <a href=\"\">\n                        <img src=\"".concat(jsonInteration.imagen, "\" alt=\"\">\n                    </a> \n                </div>\n                <div class=\"card-p\">\n                    <a href=\"#\">").concat(jsonInteration.titulo, "</a>\n                </div>\n                <div>\n                    <span>").concat(jsonInteration.contenido, "</span>\n                </div>\n            </div>\n        "); // El += tiene el objetivo de tomar una variable y sumarla a ella misma por cada vez que se itere dentro de un ciclo, asi sea forEach
+              // en este caso estamos creando todas las tarjetas una por una asignandole los valores que los traemos de la solicitud API. 
+
+              console.log(tarjetaDom);
+            });
+            cardsCatalog.innerHTML = tarjetaDom; //aca se inserta dentro de cardscatalog todos los elementos "card" que juntamos dentro de la variable tarjeta DOM
+
+          case 10:
           case "end":
             return _context.stop();
         }
@@ -4830,8 +4842,6 @@ function _fetchData() {
   }));
   return _fetchData.apply(this, arguments);
 }
-
-console.log(cardsCatalog);
 })();
 
 /******/ })()

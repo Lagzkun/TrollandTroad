@@ -3,9 +3,11 @@
     img {
         width: 101%;
     }
-    &:hover {
-        .tns-nav, .tns-controls {
-            display: flex;
+    @include respond-to(desktop) {
+        &:hover {
+            .tns-nav, .tns-controls {
+                display: flex;
+            }
         }
     }
 }

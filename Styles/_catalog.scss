@@ -1,6 +1,6 @@
 .catalog {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns:repeat(4, 1fr);
     background-color: white;
     .card {
         padding: 1rem;
@@ -19,10 +19,19 @@
         }
         span {
             font-size: 13px;
-            font-family: Open Sans,calibri light,calibri,sans-serif;
         }
         img {
             max-width: 100%;
+        }
+    }
+    @include less-than(desktop) {
+        grid-template-columns: repeat(2, 1fr);
+        .card {
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                display: block;
+            }
         }
     }  
 }
