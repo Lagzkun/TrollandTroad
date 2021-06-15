@@ -1,0 +1,65 @@
+{
+    "cards": [
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/MTGMHIIFP.jpg",
+            "titulo": "MTG Modern Horizons II",
+            "contenido": "Modern Horizons is back and introduces powerful cards and beloved reprints to the Modern format!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/YGOLightOverFP.jpg",
+            "titulo": "Yugioh Lightning Overdrive",
+            "contenido": "Lightning Overdrive is poised to shock the Dueling world and reinvigorate not one, but TWO beloved monsters from the worlds of the Yu-Gi-Oh! animated series!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/PokeBatStyFP.jpg",
+            "titulo": "Pokemon Battle Styles",
+            "contenido": "No matter how you battle with the upcoming Pokemon Trading Card Game expansion, you'll be battling in style. Battle Styles features over 160 cards, and it introduces new Single Strike and Rapid Strike style cards."
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/WW80FPButton.jpg",
+            "titulo": "DC HeroClix: Wonder Woman 80th Anniversary",
+            "contenido": "Wonder Woman has changed comics over the past 80 years and now she is here to change HeroClix! Wonder Woman 80th Anniversary has something for everyone!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/sportscardsFP.jpg",
+            "titulo": "Sports Cards",
+            "contenido": "Find Baseball, Basketball, and Football trading cards!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/BoardGameFpButton5212021.jpg",
+            "titulo": "Board Games",
+            "contenido": "Browse thousands of Board Games today!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/rpg.jpg",
+            "titulo": "RPGs",
+            "contenido": "Dust off your tabletop and browse our huge selection of RPGs! Get Dungeons and Dragons, Pathfinder, and more RPGs today!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/JigsawPuzzlesFPButton.jpg",
+            "titulo": "Jigsaw Puzzles",
+            "contenido": "Jigsaw Puzzles are now available! Browse our huge line of puzzles today!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/suppliesFPButton.jpg",
+            "titulo": "Supplies",
+            "contenido": "Protect your cards and minis with our huge selection of gaming supplies!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/DigimonFP.jpg",
+            "titulo": "Digimon",
+            "contenido": "Get Digimon card singles, booster boxes, and more!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/DBSFP.jpg",
+            "titulo": "Dragon Ball Super TCG",
+            "contenido": "Dragon Ball Super Card Game is a card game with characters from not just Dragon Ball Super, but countless other Dragon Ball series! Get card singles and more today!"
+        },
+        {
+            "imagen": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/categories/toysFP.jpg",
+            "titulo": "Toys",
+            "contenido": "Find hundreds of toys from Pokemon, Marvel, DC, and more!"
+        }
+        
+    ]
+}

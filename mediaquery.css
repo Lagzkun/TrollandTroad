@@ -1,0 +1,18 @@
+/* @media only screen and (max-width: 480px) {
+    .logo{
+        display: none;
+    }
+    .header-icon-top {
+        display: flex;
+    }
+    .search-button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .principal-menu .principal-menu__list {
+        display: none;
+    }
+    .ad-message {
+        display: none;
+    }
+} */
